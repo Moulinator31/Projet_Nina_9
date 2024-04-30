@@ -2,9 +2,6 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
-img {
-    aspect-ratio: attr(width) / attr(height);
-}
 * {
 	font-family: 'Inter';
 	font-style: normal;
