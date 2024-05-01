@@ -70,7 +70,7 @@ body {
 
 .picture img {
 	width: 300px;
-  	height: 300px;
+  	height: auto;
 
 }
 #about-me {
