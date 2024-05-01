@@ -193,6 +193,12 @@ button:not(:disabled),
   cursor: pointer;
 }
 
+
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
 textarea {
   resize: vertical;
 }
@@ -254,46 +260,6 @@ textarea {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 }
-
-.col {
-  flex: 1 0 0%;
-}
-
-.row-cols-auto > * {
-  flex: 0 0 auto;
-  width: auto;
-}
-
-.row-cols-1 > * {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-.row-cols-2 > * {
-  flex: 0 0 auto;
-  width: 50%;
-}
-
-.row-cols-3 > * {
-  flex: 0 0 auto;
-  width: 33.3333333333%;
-}
-
-.row-cols-4 > * {
-  flex: 0 0 auto;
-  width: 25%;
-}
-
-.row-cols-5 > * {
-  flex: 0 0 auto;
-  width: 20%;
-}
-
-.row-cols-6 > * {
-  flex: 0 0 auto;
-  width: 16.6666666667%;
-}
-
 
 .col-12 {
   flex: 0 0 auto;
@@ -419,7 +385,12 @@ textarea {
 .active.carousel-item-start {
   transform: translateX(-100%);
 }
-
+@media (prefers-reduced-motion: reduce) {
+  .carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    transition: none;
+  }
+}
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
