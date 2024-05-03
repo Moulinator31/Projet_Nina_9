@@ -70,7 +70,11 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" alt="picture concert" src="./assets/images/gallery/concerts/concert.webp" width="364" height="364"/>
+			<picture data-gallery-tag="Concert" class="gallery-item" width="364" height="364">
+				<source srcset="./assets/images/gallery/concerts/concert.webp" type="image/webp">
+				<img alt="picture concert" src="./assets/images/gallery/concerts/concert.webp"/>
+			</picture>
+
 			<img data-gallery-tag="Entreprises" class="gallery-item" alt="homme en smoking" src="./assets/images/gallery/entreprise/femme-heureuse-bureau.webp" width="364" height="364"/>
 			<img data-gallery-tag="Entreprises" class="gallery-item" alt="femme joyeuse" src="./assets/images/gallery/entreprise/homme-smoking.webp" width="364" height="364"/>
 			<img data-gallery-tag="Mariages" class="gallery-item" alt="Deux personnes se donnent la main" src="./assets/images/gallery/mariage/mains-tendues.webp" width="364" height="364"/>
