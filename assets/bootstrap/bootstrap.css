@@ -417,7 +417,11 @@ textarea {
   font-size: .875em;
   text-transform: uppercase
 }
-
+.item-column::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem
@@ -678,6 +682,27 @@ textarea {
   background: 0 0;
   border: 0;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
+}
+.gallery .nav {
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
 }
 .nav-pills {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
