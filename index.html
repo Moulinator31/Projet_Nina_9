@@ -32,31 +32,36 @@
 
 	<script type="application/ld+json">
 	{
-		"@context": "https://schema.org",
-		"@type": "LocalBusiness",
-		"name": "Nina Carducci",
-		"image": "./assets/images/camera-ezgif.com-jpg-to-webp-converter.webp",
-		"address":
-		{
-			"@type": "PostalAddress",
-    		"addressLocality": "Bordeaux",
-			"adressRegion": "Nouvelle-Aquitaine",
-    		"postalCode": "33200",
-    		"streetAddress": "68 avenue Alsace-Lorraine",
-  		}
-		  
-		"openingHours": 
-		{
-		  "lundi": "11:00-14:30",
-		  "mardi": "11:00-14:30",
-		  "mercredi": "11:00-14:30",
-		  "jeudi": "11:00-14:30",
-		  "vendredi": "11:00-14:30",
-		},
-		"telephone": "05 56 67 78 89",
-		"priceRange": "50€ - €400",
-
-	}
+		"@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nina Carducci",
+    "jobTitle": "Photographe professionnel",
+    "image": "./assets/images/nina-carducci.webp",
+    "telephone": "+33 5 56 67 78 89",
+    "email": "contact@ninacarducci.photo",
+    "sameAs" : "https://www.instagram.com/ninacarducci.photo",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "68 avenue Alsace-Lorraine",
+        "addressLocality": "Bordeaux",
+        "addressRegion": "Nouvelle-Aquitaine",
+        "postalCode": "33200",
+        "addressCountry": "FR"
+    },
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+            "lundi",
+            "mardi",
+            "mercredi",
+            "jeudi",
+            "vendredi"
+        ],
+        "opens": "10:00",
+        "closes": "19:00"
+    },
+    "priceRange": "50€ - €400"
+}
 	
 	</script>
 </head>
